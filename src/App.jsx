@@ -1,7 +1,7 @@
 import './App.css'
 
 function Button(){
-  return <span> Gomb </span>
+  return <span style={{ background: 'red' }}> Gomb </span>
 
 }
 function App() {
