@@ -1,5 +1,6 @@
 import './App.css'
 import { useState } from 'react'
+import PropTypes from 'prop-types'
 
 function Button( {color} ) {
     const [counter, setcounter] = useState(0);
@@ -25,4 +26,7 @@ function App() {
   )
 }
 
+Button.propTypes = {
+  color: PropTypes.string.isRequired
+}
 export default App
