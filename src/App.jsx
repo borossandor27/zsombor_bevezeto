@@ -1,11 +1,17 @@
 import './App.css'
+import { useState } from 'react'
 
-function Button({color}){
-  return <span style={{ background: color }}> Gomb </span>
+function Button( {color} ) {
+    const [counter, setcounter] = useState(0);
+  return <span
+    style={{ background: color }}
+    onClick={() => setcounter(counter + 1)}
+  > Gomb: {counter}
+  </span>
 
 }
 function App() {
- 
+
   return (
     <>
       <header className="App-header">
